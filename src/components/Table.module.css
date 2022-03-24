@@ -1,0 +1,67 @@
+/* Table Container */
+.tableContainer {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  background-color: #fff;
+  box-shadow: 0 0.05rem 0.3rem 0.035rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.2rem;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0.6rem;
+}
+
+.select {
+  display: flex;
+  width: 12rem;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.buttonText {
+  border-bottom: 2px solid transparent;
+}
+
+.button:hover .buttonText {
+  border-bottom-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Table */
+.table {
+  width: 100%;
+}
+
+.th {
+  text-align: left;
+  font-size: 1rem;
+  padding: 0.8em 0.4em 0.6em;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Empty State */
+.empty {
+  display: block;
+  width: 100%;
+  padding: 6rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 0.12rem 0.15rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.2rem;
+  text-align: center;
+}

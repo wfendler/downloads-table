@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import Table from "./components/Table";
+
+const data = [
+  {
+    name: "smss.exe",
+    device: "Stark",
+    path: "\\Device\\HarddiskVolume2\\Windows\\System32\\smss.exe",
+    status: "scheduled",
+  },
+  {
+    name: "netsh.exe",
+    device: "Targaryen",
+    path: "\\Device\\HarddiskVolume2\\Windows\\System32\\netsh.exe",
+    status: "available",
+  },
+  {
+    name: "uxtheme.dll",
+    device: "Lannister",
+    path: "\\Device\\HarddiskVolume1\\Windows\\System32\\uxtheme.dll",
+    status: "available",
+  },
+  {
+    name: "cryptbase.dll",
+    device: "Martell",
+    path: "\\Device\\HarddiskVolume1\\Windows\\System32\\cryptbase.dll",
+    status: "scheduled",
+  },
+  {
+    name: "7za.exe",
+    device: "Baratheon",
+    path: "\\Device\\HarddiskVolume1\\temp\\7za.exe",
+    status: "scheduled",
+  },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Table data={data} />
     </div>
   );
 }
